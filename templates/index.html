@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Queue Management System</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body class="custom-bg-color"> 
+    <div class="text-center">
+        <h1 class="big-title">Welcome to the Queue Management System</h1>
+        <p>You can join the queue by clicking the <a href="{{ url_for('join') }}" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>Join</a>
+        <p>If you want to leave the queue please click <a href="{{ url_for('leave') }}" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Leave</a>
+        <p>You can find more information about the system on the <a href="{{ url_for('about') }}" class="btn btn-info"><span class="glyphicon glyphicon-info-sign"></span> About</a>
+    </div>
+</body>
+</html>
